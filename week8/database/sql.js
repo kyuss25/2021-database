@@ -1,7 +1,7 @@
 import mysql from "mysql2";    // mysql2 모듈로부터 mysql 불러옴
 
 // 데이터 베이스 연결
-const pool = mysql.createPool(              // 새로운 pool을 생성함
+const pool = mysql.createPool(            // 새로운 pool을 생성함
     process.env.JAWSDB_URL ?? {
         host: 'localhost',
         user: 'sgs',
