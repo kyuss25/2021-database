@@ -1,7 +1,7 @@
 import express from "express";  // express Router 사용을 위한 express 모듈을 express 로 불러옴
 import {selectSql} from "../database/sql";  // ../database/sql의 경로에 위치한 sql.js 부터 selectsql 로 불러옴
 
-const router = express.Router();    // express Router 사용
+const router = express.Router();    // express Router 사용.
 
 router.get('/', (req,res) => {
     res.render('login');         // login.hbs 를 웹에 연결, 페이지 구현
