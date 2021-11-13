@@ -39,10 +39,12 @@ Dname | Dnumber | Mgr_ssn | Mgr_start_date
  12162131 | Nilson |   0 |
  12175133 | Johns  |   3 |
  12175140 | King   |   4 |
+ 
  **10주차에 작성한 사원의 정보를 담고 있는 Employee Table 입니다.**
 
   Id    | Password  | Role  |
 --------|-----------|-------|
  admin | admin1234 | admin |
  test  | test1234  | users |
+
  **10주차에 작성한 사용자 계정의 정보를 담고 있는 user Table 입니다.**
