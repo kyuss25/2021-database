@@ -1,9 +1,10 @@
 import mysql from "mysql2";    // mysql2 모듈로부터 mysql 불러옴
+
 // 데이터 베이스 연결
 const pool = mysql.createPool(              // 새로운 pool을 생성함
     process.env.JAWSDB_URL ?? {
         host: 'localhost',
-        user: 'root' ,
+        user: 'root',
         database: 'week10',
         password: 'simgs3413!',
         waitForConnections: true,       // 풀에 여유 커넥션이 없는 경우 대기
