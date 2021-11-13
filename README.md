@@ -1,34 +1,47 @@
 # 2021-database
-## 3주차 실습 실행 방법
-1. 레포지토리 복사(wsl환경에서 명령어 입력)
-    - (SSH 설정한 경우) git clone git@github.com:mskim1024/2021-02-database.git
-    - (token을 사용하는 경우) git clone https://github.com/mskim1024/2021-02-database.git
-2. week_3 폴더로 이동
-    > cd week_3
+## 3주차 실습 테이블
 
-<pre>
-<code>
-const pool = mysql.createPool(
-    process.env.JAWSDB_URL ?? {
-        host: 'localhost',s
-        user: 'sgs',      // 사용자 이름
-        database: 'sims',     // 사용자 데이터 베이스명
-        password: 'simgs3413',   // 사용자 계정 비밀번호
-        waitForConnections: true,
-        connectionLimit: 10,
-        queueLimit: 0
-    }
-);
-</code>
-</pre>
-<br>
+## <span style="color:green">학생 정보 테이블</span>
 
-## <span style="color:red">테이블 작성법</span>
+Studentnum | Name  | Grade | Depart  | Admissiondate | Email              
+-----------|-------|-------|---------|---------------|---------|
+12162131 | 심규성 |4|정보통신공학과|2016-03-02|gssim1208@inha.edu|
 
-이름|과|전공|학번
----|---|---|---|
-심규성|정보통신공학과|정보통신|12162131|
+**3주차에 작성한 학생의 정보를 담고 있는 student Table 입니다.**
 
-## 텍스트강조
+## 8주차 실습 테이블
 
-**데이터베이스** 실습은 재미 ~~없어요~~있어요.
+## <span style="color:green">사원 테이블, 부서 테이블</span>
+Fname | Minit | Lname | Ssn | Bdate | Address | Sex  | Salary | Super_ssn | Dno
+------|-------|-------|-----|-------|---------|------|--------|-----------|------|
+ 규성  | s     | 심    | 12162131 | 1997-12-08 | 인천    | 남   |  50000 |           |   1 |
+ 민호  | s     | 이    | 12164522 | 2000-05-22 | 서울    | 남   |  50000 | 12162131  |   2 |
+ 은원  | s     | 정    | 12200315 | 2000-01-19 | 대전    | 남   |  50000 | 12162131  |   5 |
+ 종현  | s     | 원    | 12202112 | 2000-06-14 | 대구    | 남   |  50000 | 12162131  |   3 |
+ 백호  | s     | 강    | 12202144 | 2000-12-14 | 수원    | 남   |  50000 | 12162131  |   4 |
+
+**8주차에 작성한 사원의 정보를 담고 있는 Employee Table 입니다.**
+Dname | Dnumber | Mgr_ssn | Mgr_start_date 
+------|---------|---------|---------------|
+아태물류학과 |   1 | 12162131 | 2021-01-01  |
+컴퓨터공학과 |   3 | 12200315 | 1981-12-09  |
+기계공학과   |   4 | 12202144 | 1981-12-07  |
+
+**8주차에 작성한 사원의 정보를 담고 있는 Department Table 입니다.**
+
+## 10주차 실습 테이블
+## <span style="color:green">사원 테이블, 사용자 계정 테이블</span>
+ Ssn | Name   | Dno |
+-----|--------|------|
+ 12132201 | James  |   2 |
+ 12151120 | Mike   |   1 |
+ 12162131 | Nilson |   0 |
+ 12175133 | Johns  |   3 |
+ 12175140 | King   |   4 |
+ **10주차에 작성한 사원의 정보를 담고 있는 Employee Table 입니다.**
+
+  Id    | Password  | Role  |
+--------|-----------|-------|
+ admin | admin1234 | admin |
+ test  | test1234  | users |
+ **10주차에 작성한 사용자 계정의 정보를 담고 있는 user Table 입니다.**
