@@ -26,7 +26,7 @@ export const selectSql = {
         return rows
     },
 }
-                                // insertsql 모듈을 통해 객체에 전달된 입력할 데이터 값을 내보냄
+                     // insertsql 모듈을 통해 객체에 전달된 입력할 데이터 값을 내보냄
 export const insertSql = {
 
     setEmployee : async (data) => {
