@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {     // /delete 주소 페이지 설정
     res.render('delete', {                       // delete.hbs 파일을 웹에 연결 페이지 구현 
         title: "삭제 기능",
         employee
-    })                                     // 데이터 값 전달과 타이틀 제시
+    })                                   // 데이터 값 전달과 타이틀 제시
 });
 
 router.post('/',async(req, res) => {   // delete 페이지의 기능 설정
