@@ -4,7 +4,7 @@ import {selectSql, deleteSql} from "../database/sql"; // 해당 경로 ../databa
 const router = express.Router();        // express Router 사용 
 
 router.get('/', async (req, res) => {     // /delete 주소 페이지 설정
-         
+    
     const employee = await selectSql.getEmployee();  // selectsql 모듈로 불러온 employee 데이터 값 저장 
     res.render('delete', {                       // delete.hbs 파일을 웹에 연결 페이지 구현 
         title: "삭제 기능",
