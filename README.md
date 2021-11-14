@@ -2,7 +2,7 @@
 
 ## 3주차 실습 테이블
 
-## <span style="color:green">학생 정보 테이블</span>
+## <span style="color:blue">학생 정보 테이블</span>
 
 Studentnum | Name  | Grade | Depart  | Admissiondate | Email              
 -----------|-------|-------|---------|---------------|---------|
@@ -12,7 +12,7 @@ Studentnum | Name  | Grade | Depart  | Admissiondate | Email
 
 ## 8주차 실습 테이블
 
-## <span style="color:green">사원 테이블, 부서 테이블</span>
+## <span style="color:blue">사원 테이블, 부서 테이블</span>
 Fname | Minit | Lname | Ssn | Bdate | Address | Sex  | Salary | Super_ssn | Dno
 ------|-------|-------|-----|-------|---------|------|--------|-----------|------|
  규성  | s     | 심    | 12162131 | 1997-12-08 | 인천    | 남   |  50000 |           |   1 |
@@ -31,7 +31,7 @@ Dname | Dnumber | Mgr_ssn | Mgr_start_date
 **8주차에 작성한 사원의 정보를 담고 있는 Department Table 입니다.**
 
 ## 10주차 실습 테이블
-## <span style="color:green">사원 테이블, 사용자 계정 테이블</span>
+## <span style="color:blue">사원 테이블, 사용자 계정 테이블</span>
  Ssn | Name   | Dno |
 -----|--------|------|
  12132201 | James  |   2 |
